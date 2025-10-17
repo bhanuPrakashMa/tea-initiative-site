@@ -1,0 +1,116 @@
+.site-header {
+    position: fixed; /* Ensure header stays at top */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1f2937;
+    color: #ffffff;
+    height: 60px;
+    z-index: 100; /* High z-index to stay above content */
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-header,
+.top-nav {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.top-nav li {
+    margin: 0 12px;
+    padding: 5px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #ff9900;
+}
+
+.nav-item-has-submenu {
+    position: relative;
+}
+
+.nav-main-link {
+    display: block;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2d3748;
+    min-width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 8px 0;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item-has-submenu:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.submenu a {
+    display: block;
+    padding: 6px 12px;
+    color: white;
+    font-size: 0.95rem;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.submenu a:hover {
+    background-color: #3b4a5a;
+    color: #ff9900;
+}

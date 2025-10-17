@@ -1,0 +1,61 @@
+#footer {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+#footer .icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#footer .icons li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+#footer .icons li a img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+  filter: invert(1); /* makes SVG white */
+}
+
+#footer .icons li a:hover {
+  transform: scale(1.2);
+}
+
+#footer .icons li a .label {
+  font-size: 0.75rem;
+}
+
+#footer ul.copyright {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+#footer ul.copyright li {
+  margin: 5px 0;
+}
+
+#footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}

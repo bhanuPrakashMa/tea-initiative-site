@@ -1,0 +1,44 @@
+/* src/styles/AboutUs.css */
+
+.about-page-content {
+    /* Layout: Center content and limit width */
+    max-width: 900px;
+    margin: 40px auto; /* 40px top/bottom margin, center horizontally */
+    padding: 20px;
+    background-color: #e8e4e4; /* White background for the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+}
+
+.about-page-content h1 {
+    /* Heading Style */
+    font-size: 2.5em;
+    color: #af6f4c; /* A pleasant green color, often associated with community/growth */
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eeeeee; /* Light divider line */
+}
+
+.about-page-content p {
+    /* Paragraph Text Style */
+    font-size: 1.1em;
+    line-height: 1.8; /* Increased line height for readability */
+    color: #333; /* Dark text color */
+    text-align: justify; /* Justify text for a formal look */
+    margin-bottom: 20px;
+}
+
+/* Optional: Emphasize the organization name */
+.about-page-content p strong {
+    font-weight: 600;
+    color: #007bff; /* A distinct color for emphasis */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 950px) {
+    .about-page-content {
+        margin: 20px 10px; /* Reduced margins on small screens */
+        padding: 15px;
+    }
+}

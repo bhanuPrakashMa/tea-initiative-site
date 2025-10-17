@@ -1,0 +1,66 @@
+/* src/styles/submenu.css */
+
+/* 1. Main Container: Position Context */
+.submenu-container {
+    /* The parent LI in Header.jsx must have position: relative */
+    position: relative; 
+    display: block; 
+}
+
+/* 2. Submenu Title/Trigger */
+.submenu-title {
+    /* Style inherited from the main header.css */
+    display: block; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 3. Submenu Content: Positioning and Appearance */
+/* Since it's conditionally rendered in JS, we don't need 'display: none' here */
+.sub-menu-content {
+    /* Positioning it as a dropdown */
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    
+    /* Appearance and stacking */
+    z-index: 100;
+    min-width: 180px; 
+    background-color: #444; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    padding-top: 5px; /* Added small padding to prevent top edge issue */
+}
+
+/* 4. Vertical List Appearance */
+.sub-menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block; 
+}
+
+.sub-menu-content li {
+    display: block; 
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-menu-content li:last-child {
+    border-bottom: none;
+}
+
+/* 5. Submenu Links */
+.sub-menu-content a {
+    display: block; 
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap; 
+    transition: background-color 0.2s;
+}
+
+.sub-menu-content a:hover {
+    background-color: #555;
+    color: #ff9900;
+}
