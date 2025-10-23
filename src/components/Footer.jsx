@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer id="footer">
       <ul className="icons">
-        <li>
+        {/* <li>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
             <span className="label">Twitter</span>
@@ -29,9 +29,9 @@ export default function Footer() {
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
             <span className="label">LinkedIn</span>
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/___t.e.a____/reels/" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
             <span className="label">Instagram</span>
           </a>
@@ -43,7 +43,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="mailto:info@example.com">
+          <a href="teluguerlangenassociation@gmail.com">
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-ru.svg" alt="Email" />
             <span className="label">Email</span>
           </a>
